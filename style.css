@@ -1,0 +1,98 @@
+/* header */
+div.header {background-color:#006600; color:rgb(255,255,255); height:112px;}
+img.headereliface {padding-top:6px; padding-left:6px; padding-right:6px; width:100px; height:100px; float:left;}
+img.headerlogo    {padding-top:6px; padding-left:6px; padding-right:6px; height:100px; float:right;}
+span.headertxt {display:inline-flex; align-items:center; padding:6px; min-height:100px;}
+span.H1 {font-size:2em; font-family:"Arial", arial, sans-serif;}
+span.subtitle {font-size:1.125em}
+#header-nav {height:5px; padding:0px 10px 0px 10px; background:#ffffff url(shadow.gif) repeat-x bottom;} /* from https://www.dartmouth.edu/~webpub/_permacode/common/20071201/styles/parts/04-header-nav.css */
+@media (prefers-color-scheme:dark) {
+#header-nav {background:#000000 url(shadow_dark.png) repeat-x bottom;}
+}
+
+/* main text */
+body {background-color:rgb(255,255,255); margin:0; padding:0;}
+div.contentblock {margin:5px; padding:5px; max-width:1600px;}
+h2 {font-size:1.5em; font-family:"Arial", Arial, Tahoma, Verdana, sans-serif; margin-top:10px; margin-bottom:10px;}
+img.moorehall {float:left; vertical-align:middle; padding:5px; width:55px; height:55px;}
+span.address {display:inline-flex; align-items:center; padding:5px; min-height:55px;}
+a:link    {color:#004400;}
+a:visited {color:#004400;}
+a:hover   {color:#006600;}
+a:active  {color:#006600;}
+[data-tooltip]::before {content:attr(data-tooltip);} /* build tooltip using before pseudoclass */
+[data-tooltip] {position:relative; display:inline-block;}
+[data-tooltip]::before {background:#006600; color:#ffffff; position:absolute; z-index:99; visibility:hidden; opacity:0; transition:opacity 1s; padding:5px; text-align:center;}
+[data-tooltip]:hover::before {visibility:visible; opacity:1;}
+[data-tooltip].tt::before {top:100%; margin-top:10px;} /* or {bottom:100%; margin-bottom:10px;} or {right:100%; margin-right:10px;} or {left:100%; margin-left:10px;} */
+[data-tooltip].tttxt {background:#eeeeee; transition:background 1s; display:inline;}
+[data-tooltip].tttxt:hover {background:#cccccc;}
+[data-tooltip].tt50::before  {min-width:50px;}
+[data-tooltip].tt300::before {min-width:300px;}
+@media (prefers-color-scheme:dark) { 
+body {background-color:rgb(0,0,0);color:#ffffff}
+a:link    {color:#88ee88;}
+a:visited {color:#88ee88;}
+a:hover   {color:#55aa55;}
+a:active  {color:#55aa55;}
+[data-tooltip].tttxt {background:#555555;}
+}
+
+/* multi-column section */
+div.layoutrow {font-size:1.125em; text-align:center; display:flex; width:80%; max-width:1200px; margin:auto;}
+div.layoutcol {text-align:left; flex:33%;}
+div.interesttitlecontainer {position:relative; text-align:center; color:white;}
+div.layoutcol:hover div.interesttitlecontainer {color:#006600; text-shadow:0 0 20px #ffffff, 0 0 20px #ffffff, 0 0 20px #ffffff, 0 0 20px #ffffff;}
+img.interestimg {width:100%; object-fit:contain;}
+img.interestimghover {width:100%; object-fit:contain; transition:opacity 1s; opacity:0; position:absolute; top:0; left:0; z-index:97;}
+div.layoutcol:hover img.interestimghover {opacity:1;}
+div.interestimgtxt {z-index:98; position:absolute; bottom:8px; left:50%; transform:translate(-50%, 0); width:100%;} /* or, for fully centered {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);} */
+ul {list-style:none; margin:0; padding:8px;}
+li {margin-top:8px; margin-left:16px; padding-left:8px; list-style-image:url(bullet.png);}
+li.nobullet {list-style-image:none; margin-left:0; padding-left:0; padding-right:0;}
+
+/* papers, patents, presentations */
+div.pub {padding-right:4px; padding-top:4px; padding-bottom:4px; font-family:"Times New Roman", Georgia, Serif;}
+img.pubimg {width:64px; height:64px; vertical-align:middle; padding-right:4px;}
+span.pubtxt {display:inline-block; vertical-align:middle;}
+span.publine1  {font-size:1.25em; margin-right:10px;}
+span.pubauthor {font-size:1.125em; color:#114D22;}
+span.textbody  {font-size:1.125em}
+span.ico {display:inline-block; vertical-align:middle; width:32px; height:32px; margin-left:4px;}
+span.ico_pdf        {background:url('icon_paperclip.png') 0 0;background-size:64px 32px;}
+span.ico_pdf:hover  {background:url('icon_paperclip.png') 32px 0; background-size:64px 32px;}
+span.ico_code       {background:url('icon_code.png') 0 0; background-size:64px 32px;}
+span.ico_code:hover {background:url('icon_code.png') 32px 0; background-size:64px 32px;}
+span.ico_cite       {background:url('icon_cite.png') 0 0; background-size:64px 32px}
+span.ico_cite:hover {background:url('icon_cite.png') 32px 0; background-size:64px 32px;}
+@media (prefers-color-scheme:dark) { 
+span.pubauthor {color:#88ee88;}
+span.ico_pdf        {background:url('icon_paperclip_dark.png') 0 0;background-size:64px 32px;}
+span.ico_pdf:hover  {background:url('icon_paperclip_dark.png') 32px 0; background-size:64px 32px;}
+span.ico_code       {background:url('icon_code_dark.png') 0 0; background-size:64px 32px;}
+span.ico_code:hover {background:url('icon_code_dark.png') 32px 0; background-size:64px 32px;}
+span.ico_cite       {background:url('icon_cite_dark.png') 0 0; background-size:64px 32px}
+span.ico_cite:hover {background:url('icon_cite_dark.png') 32px 0; background-size:64px 32px;}
+}
+
+/* footer */
+hr {border:1px solid #006600}
+div.footer {text-align:center; padding-bottom:8px;}
+
+/* my normal favorite dark green is 006600 */
+
+/* popup boxes adapted from https://codepen.io/imprakash/pen/GgNMXO */
+.overlay {position:fixed; top:0; bottom:0; left:0; right:0; background:rgba(0, 0, 0, 0.7); transition:opacity 500ms; visibility:hidden; opacity:0; z-index:100;}
+.overlay:target {visibility:visible; opacity:1;}
+.popup {margin:70px auto; padding:20px; background:#ffffff; border-radius:5px; width:50%; position:relative; transition:all 5s ease-in-out;}
+.popup .close {position:absolute; top:20px; right:30px; transition:all 200ms; font-size:30px; font-weight:bold; text-decoration:none; color:#333;}
+.popup .close:hover {color:#06D85F;}
+.popup .content {max-height:30%; overflow:auto;}
+@media screen and (max-width: 700px) {
+.box {width:70%;}
+.popup {width:70%;}
+}
+@media (prefers-color-scheme:dark) { 
+.popup {background:#444444;}
+.popup .close {color:#dddddd;}
+}
