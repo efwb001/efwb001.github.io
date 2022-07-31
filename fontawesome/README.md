@@ -1,0 +1,1 @@
+this is a subset of fontawesome-free-6.1.1-web
