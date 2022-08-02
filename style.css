@@ -55,24 +55,16 @@ li.nobullet {list-style-image:none; margin-left:0; padding-left:0; padding-right
 div.pub {padding-right:4px; padding-top:4px; padding-bottom:4px; font-family:"Times New Roman", Georgia, Serif;}
 img.pubimg {width:64px; height:64px; vertical-align:middle; padding-right:4px;}
 span.pubtxt {display:inline-block; vertical-align:middle;}
-span.publine1  {font-size:1.25em; margin-right:10px;}
+span.publine1  {font-size:1.25em;}
 span.pubauthor {font-size:1.125em; color:#114D22;}
 span.textbody  {font-size:1.125em}
 span.ico {display:inline-block; vertical-align:middle; width:32px; height:32px; margin-left:4px;}
-span.ico_pdf        {background:url('icon_paperclip.png') 0 0;background-size:64px 32px;}
-span.ico_pdf:hover  {background:url('icon_paperclip.png') 32px 0; background-size:64px 32px;}
-span.ico_code       {background:url('icon_code.png') 0 0; background-size:64px 32px;}
-span.ico_code:hover {background:url('icon_code.png') 32px 0; background-size:64px 32px;}
-span.ico_cite       {background:url('icon_cite.png') 0 0; background-size:64px 32px}
-span.ico_cite:hover {background:url('icon_cite.png') 32px 0; background-size:64px 32px;}
-@media (prefers-color-scheme:dark) { 
+i.ico       {font-size:20; margin-left:10px; color:#000000}
+i.ico:hover {font-size:20; margin-left:10px; color:#006600}
+@media (prefers-color-scheme:dark) {
 span.pubauthor {color:#88ee88;}
-span.ico_pdf        {background:url('icon_paperclip_dark.png') 0 0;background-size:64px 32px;}
-span.ico_pdf:hover  {background:url('icon_paperclip_dark.png') 32px 0; background-size:64px 32px;}
-span.ico_code       {background:url('icon_code_dark.png') 0 0; background-size:64px 32px;}
-span.ico_code:hover {background:url('icon_code_dark.png') 32px 0; background-size:64px 32px;}
-span.ico_cite       {background:url('icon_cite_dark.png') 0 0; background-size:64px 32px}
-span.ico_cite:hover {background:url('icon_cite_dark.png') 32px 0; background-size:64px 32px;}
+i.ico       {font-size:20; margin-left:10px; color:#ffffff}
+i.ico:hover {font-size:20; margin-left:10px; color:#006600}
 }
 
 /* footer */
