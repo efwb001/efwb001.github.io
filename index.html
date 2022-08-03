@@ -30,7 +30,8 @@ Hanover, NH 03755<br />
 <div class="contentblock">
 <h2>Summary</h2>
 <span class="textbody">
-Hi! I'm a postdoc in Richard Granger's <a href="https://brainengineering.org">Brain Engineering Laboratory</a> at Dartmouth. I study how the brain learns to compute — what algorithms the brain implements, what architecture enables them, and how they arise. I'm particularly interested in the algorithms that underlie the neural development of associative/relational representations.<br />
+Hi! I'm the CTO of AI startup <a href="https://non-von.com">Non-Von</a> and a postdoc in Richard Granger's <a href="https://brainengineering.org">Brain Engineering Laboratory</a> at Dartmouth. I study how the brain learns to compute. What algorithms does the brain implement? How do they arise from neurons? I'm particularly interested in the algorithms that underlie the biological development of associative/relational representations. I'm driven by my passion to understand how humans use these representations to do amazing things — things that computers have yet to accomplish.<br />
+
 <br />
 I received my PhD in cognitive neuroscience from Dartmouth, my MS in machine learning from UC Irvine, and my BS in computer engineering from Bucknell.<br />
 </span>
@@ -44,9 +45,14 @@ I received my PhD in cognitive neuroscience from Dartmouth, my MS in machine lea
 <a href="https://www.linkedin.com/in/elibowen">LinkedIn</a>
 </div>
 
+
+<!-- SCRIPTS -->
+
+
 <script type="text/javascript">
 	var pubs = [];
 
+	// handle mobile
 	var style = document.createElement('style');
 	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
 		style.innerHTML = `
@@ -58,6 +64,7 @@ I received my PhD in cognitive neuroscience from Dartmouth, my MS in machine lea
 			img.moorehall {width:83px; height:83px;}
 			span.address {font-size:1.25em; min-height:83px;}
 			hr {border:3px solid #006600; border-radius:3px; margin-left:10px; margin-right:10px;}
+			div.layoutrow {display:block;}
 		`;
 	}
 	document.head.appendChild(style);
